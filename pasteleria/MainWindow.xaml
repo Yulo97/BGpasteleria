@@ -8,7 +8,7 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Label x:Name="contenido" Content="PROGRAMA DE PRUEBA" HorizontalAlignment="Left" Margin="20,20,0,0" Width="637" FontSize="24" Height="42" VerticalAlignment="Top"/>
-        <Button x:Name="boton" Content="BUTTON" HorizontalAlignment="Right" Margin="0,0,40,40
+        <Button x:Name="boton" Content="Boton" HorizontalAlignment="Right" Margin="0,0,40,40
 " VerticalAlignment="Bottom" Click="boton_Click" FontSize="24"/>
 
     </Grid>
