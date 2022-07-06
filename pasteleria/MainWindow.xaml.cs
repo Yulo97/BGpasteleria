@@ -25,9 +25,26 @@ namespace pasteleria
             InitializeComponent();
         }
 
-        private void boton_Click(object sender, RoutedEventArgs e)
+        private void IngresarLogin(object sender, RoutedEventArgs e)
         {
-            contenido.Content = "Contenido Alterado";
+            string user = textBoxUser.Text;
+            string pass = textBoxPass.Password;
+
+            if (user=="asd" && pass=="asd")
+            {
+                var login = new MainWindow();
+                var inicio = new Inicio();
+                closeButton_Click(login);
+                inicio.Show();
+
+            }
+            else
+            {
+                MessageBox.Show("Usuario o Contraseña Incorrecto.");
+            }
+
         }
+        private void closeButton_Click(object ventana) =>
+            Close();
     }
 }
