@@ -32,11 +32,9 @@ namespace pasteleria
 
             if (user=="asd" && pass=="asd")
             {
-                var login = new MainWindow();
-                var inicio = new Inicio();
-                closeButton_Click(login);
+                Inicio inicio = new Inicio();
+                this.Close();
                 inicio.Show();
-
             }
             else
             {
@@ -44,7 +42,6 @@ namespace pasteleria
             }
 
         }
-        private void closeButton_Click(object ventana) =>
-            Close();
+            
     }
 }

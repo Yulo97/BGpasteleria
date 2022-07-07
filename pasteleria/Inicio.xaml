@@ -8,16 +8,16 @@
         Title="Inicio" Height="560" Width="1000" WindowStartupLocation="CenterScreen">
     <Grid>
         <StackPanel HorizontalAlignment="Left" Width="200" Background="#FFD8D8D8">
-            <Grid x:Name="Productos" Height="38" Background="#FFB3B3B3">
+            <Grid x:Name="Ingredientes" Height="38" Background="#FFB3B3B3" MouseLeftButtonDown="OpenTabla">
                 <Image HorizontalAlignment="Left" Height="38" VerticalAlignment="Center" Width="38" Source="/dona.png"/>
-                <Label Margin="38,0,0,0" FontSize="20">Productos</Label>
+                <Label Margin="38,0,0,0" FontSize="20" Content="Ingredientes"/>
             </Grid>
-            <Grid x:Name="Ventas" Height="38" Background="#FFB3B3B3" Margin="0,3,0,0">
+            <Grid x:Name="Recetas" Height="38" Background="#FFB3B3B3" Margin="0,3,0,0" MouseLeftButtonDown="OpenTabla">
                 <Image HorizontalAlignment="Left" Height="38" VerticalAlignment="Center" Width="38" Source="/dona.png"/>
-                <Label Margin="38,0,0,0" FontSize="20">Productos</Label>
+                <Label Margin="38,0,0,0" FontSize="20" Content="Recetas"/>
             </Grid>
         </StackPanel>
-        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="205,0,0,0"/>
+        <Frame x:Name="FrameTablas" Margin="200,0,0,0"/>
 
     </Grid>
 </Window>

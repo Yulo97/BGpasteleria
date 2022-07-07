@@ -22,6 +22,29 @@ namespace pasteleria
         public Inicio()
         {
             InitializeComponent();
+
+            Ingredientes.Nombre
+        }
+
+
+
+        private void OpenTabla(object sender, MouseButtonEventArgs e)
+        {
+            var pagina = ((Grid)sender).Name;
+
+            switch(pagina)
+            {
+                case "Ingredientes":
+
+                    FrameTablas.Navigate(new PageIngredientes());
+                    break;
+
+                case "Recetas":
+
+                    FrameTablas.Navigate(new PageRecetas());
+                    break;
+
+            }
         }
     }
 }
