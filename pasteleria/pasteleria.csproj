@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="dona.png" />
+    <Resource Include="Recursos\dona.png" />
   </ItemGroup>
 
 </Project>

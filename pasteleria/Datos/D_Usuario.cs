@@ -10,7 +10,7 @@ namespace pasteleria
 {
     public class D_Usuario
     {
-        public void IniciarSesion()
+        public bool IniciarSesion()
         {
             string name = E_Usuario.UsuarioName;
             string pass = E_Usuario.UsuarioPass;
@@ -28,8 +28,16 @@ namespace pasteleria
             {
                 conexion.Open();
                 reader = comandoSql.ExecuteReader();
-                MessageBox.Show(reader.ToString());
-                conexion.Close();
+                if (reader.HasRows)
+                {
+                    conexion.Close();
+                    return true;
+                }
+                else
+                {
+                    conexion.Close();
+                    return false;
+                }
             }
             catch (Exception)
             {

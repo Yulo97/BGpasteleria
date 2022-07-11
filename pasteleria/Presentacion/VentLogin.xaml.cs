@@ -13,36 +13,22 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace pasteleria
+namespace pasteleria.Presentacion
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class VentLogin : Window
     {
-        public MainWindow()
+        public VentLogin()
         {
             InitializeComponent();
         }
-
+        
         private void IngresarLogin(object sender, RoutedEventArgs e)
         {
-            string user = textBoxUser.Text;
-            string pass = textBoxPass.Password;
-
-            if (user=="asd" && pass=="asd")
-            {
-                Inicio inicio = new Inicio();
-                this.Close();
-                inicio.Show();
-            }
-            else
-            {
-                MessageBox.Show("Usuario o Contraseña Incorrecto.");
-            }
-            D_Usuario usuario = new D_Usuario();
-            usuario.IniciarSesion();
-
+            E_Usuario.UsuarioName = textBoxUser.Text;
+            E_Usuario.UsuarioPass = textBoxPass.Password;
         }
     }
 }
