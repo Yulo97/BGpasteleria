@@ -14,7 +14,7 @@ namespace pasteleria
             try
             {
                 //using (MySqlConnection con = new MySqlConnection("SERVER=66.97.46.146;PORT=3306;UID=client;PASSWORD=client40366371;DATABASE=db_gestionblack"))
-                using (MySqlConnection con = new MySqlConnection("server=66.97.46.146;persistsecurityinfo=True;database=db_pasteleria; user id = client;" + " password = client40366371;"))
+                using (MySqlConnection con = new MySqlConnection("server=66.97.46.146;persistsecurityinfo=True;database=db_bg_pasteleria; user id = client;" + " password = client40366371;"))
                 {
                     try
                     {

@@ -23,7 +23,6 @@ namespace pasteleria
         {
             InitializeComponent();
 
-            Ingredientes.Nombre
         }
 
 

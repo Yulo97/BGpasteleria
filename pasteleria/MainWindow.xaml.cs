@@ -40,8 +40,9 @@ namespace pasteleria
             {
                 MessageBox.Show("Usuario o Contraseña Incorrecto.");
             }
+            D_Usuario usuario = new D_Usuario();
+            usuario.IniciarSesion();
 
         }
-            
     }
 }
