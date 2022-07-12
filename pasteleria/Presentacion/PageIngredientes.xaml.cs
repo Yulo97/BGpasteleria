@@ -20,9 +20,12 @@ namespace pasteleria
     /// </summary>
     public partial class PageIngredientes : Page
     {
+        N_Ingredientes n_ingredientes = new N_Ingredientes();
+
         public PageIngredientes()
         {
             InitializeComponent();
+            tablaIngredientes.ItemsSource = n_ingredientes.ListaIngredientes().DefaultView;
         }
     }
 }

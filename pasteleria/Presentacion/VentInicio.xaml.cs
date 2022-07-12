@@ -17,15 +17,13 @@ namespace pasteleria
     /// <summary>
     /// Lógica de interacción para Inicio.xaml
     /// </summary>
-    public partial class Inicio : Window
+    public partial class VentInicio : Window
     {
-        public Inicio()
+        public VentInicio()
         {
             InitializeComponent();
 
         }
-
-
 
         private void OpenTabla(object sender, MouseButtonEventArgs e)
         {

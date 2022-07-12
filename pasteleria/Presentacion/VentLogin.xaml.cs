@@ -20,6 +20,10 @@ namespace pasteleria.Presentacion
     /// </summary>
     public partial class VentLogin : Window
     {
+
+        N_Usuario verificacion = new N_Usuario();
+
+
         public VentLogin()
         {
             InitializeComponent();
@@ -29,6 +33,17 @@ namespace pasteleria.Presentacion
         {
             E_Usuario.UsuarioName = textBoxUser.Text;
             E_Usuario.UsuarioPass = textBoxPass.Password;
+
+            if (verificacion.VerificacionDeUsuario())
+            {
+                VentInicio inicio = new VentInicio();
+                this.Close();
+                inicio.Show();
+            }
+            else
+            {
+                MessageBox.Show("Contraseña o Usuario Incorrecto");
+            }
         }
     }
 }

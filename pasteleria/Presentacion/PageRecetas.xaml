@@ -9,7 +9,7 @@
       Title="PageRecetas">
 
     <Grid>
-        <DataGrid/>
+        <DataGrid x:Name="tablaRecetas" IsReadOnly="True"/>
         <Button Content="Button" HorizontalAlignment="Left" Margin="360,374,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Page>

@@ -20,9 +20,14 @@ namespace pasteleria
     /// </summary>
     public partial class PageRecetas : Page
     {
+
+        N_Recetas n_recetas = new N_Recetas();
+
         public PageRecetas()
         {
             InitializeComponent();
+            tablaRecetas.ItemsSource = n_recetas.ListaRecetas().DefaultView;
         }
+
     }
 }
